@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <input id="toggle-all" class="toggle-all" type="checkbox" v-on:click="toggleAll">
+    <input id="toggle-all" class="toggle-all" type="checkbox" v-on:click="toggleAll" :checked="leftItems == 0">
     <label for="toggle-all">Mark all as complete</label>
     <ul class="todo-list" v-for="(todo, index) in filteredTodoList" :key="index">
       <!-- These are here just to show the structure of the list items -->
